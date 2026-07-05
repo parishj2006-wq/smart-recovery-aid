@@ -34,5 +34,31 @@ User → Web App → AI Engine → Response → User
 - Doctor consultation feature
 - Voice-based AI assistant
 
-## Note
+## Backend Architecture (Prototype Design)
+
+This project currently uses a frontend-first architecture built using Lovable AI. The backend layer is designed conceptually as follows:
+
+User Input (Symptoms)
+        ↓
+AI Processing Layer (LLM API / Lovable AI integration)
+        ↓
+Response Generation Engine
+        ↓
+Frontend Display (React UI)
+
+In future versions, this can be extended using:
+- Node.js backend server
+- PostgreSQL database for patient records
+- Authentication system for user accounts
+
+## System Design Overview
+
+The system follows a modular AI-assisted architecture:
+
+- Frontend Layer: React-based UI (Lovable-generated)
+- AI Layer: Language model processing user input
+- Service Layer: Handles request/response flow
+- Presentation Layer: Displays structured medical guidance
+
+ ## Note
 This project was built using Lovable AI platform and customized for hackathon submission.
