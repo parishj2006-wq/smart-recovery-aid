@@ -26,9 +26,6 @@ app.post("/api/symptoms", (req, res) => {
   });
 });
 
-const PORT = 5000;
-const PORT = process.env.PORT || 5000;
-
 app.get("/test", (req, res) => {
   res.json({ message: "Backend is working" });
 });
@@ -39,6 +36,8 @@ git commit -m "initial backend"
 git branch -M main
 git remote add origin YOUR_GITHUB_REPO_URL
 git push -u origin main
+
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
