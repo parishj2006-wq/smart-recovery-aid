@@ -30,13 +30,6 @@ app.get("/test", (req, res) => {
   res.json({ message: "Backend is working" });
 });
 
-git init
-git add .
-git commit -m "initial backend"
-git branch -M main
-git remote add origin YOUR_GITHUB_REPO_URL
-git push -u origin main
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
