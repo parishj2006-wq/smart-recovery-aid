@@ -56,6 +56,15 @@ In future versions, this can be extended using:
 The system follows a modular AI-assisted architecture:
 
 - Frontend Layer: React-based UI (Lovable-generated)
+
+  ## Backend
+
+The backend is built using Node.js and Express and includes:
+- REST API for symptom analysis
+- AI-like rule-based logic
+- CORS-enabled frontend communication
+
+Backend entry point: server.js
 - AI Layer: Language model processing user input
 - Service Layer: Handles request/response flow
 - Presentation Layer: Displays structured medical guidance
